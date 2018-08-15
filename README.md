@@ -14,8 +14,8 @@ An open-source NLP research library, built on PyTorch.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/allennlp-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/allennlp-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/allennlp-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/allennlp-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/nelson-liu/allennlp-feedstock/master.svg?label=Linux)](https://circleci.com/gh/nelson-liu/allennlp-feedstock)
+[![OSX](https://img.shields.io/travis/nelson-liu/allennlp-feedstock/master.svg?label=macOS)](https://travis-ci.org/nelson-liu/allennlp-feedstock)
 ![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
