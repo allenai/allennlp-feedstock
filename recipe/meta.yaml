@@ -1,8 +1,8 @@
 {% set name = "allennlp" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "88b402deabd3d76b0ef8655baa743d8dab26ef990076584c376a924bcf4da845" %}
+{% set hash_value = "c3b29e331fb450064711b45bae7dc133b08aa77efd5e5e7b5d7091fd5cfc4726" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,17 +14,17 @@ source:
 
 build:
   skip: True  # [win or py<36]
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
-    - pytorch ==0.4.0
-    - pyhocon ==0.3.35
+    - python >=3.6
+    - pytorch >=0.4.0,<0.5.0
+    - jsonnet ==0.10.0;sys.platform!='win32'
     - typing
     - overrides
     - nltk
@@ -35,8 +35,7 @@ requirements:
     - awscli >=1.11.91
     - flask ==0.12.1
     - flask-cors ==3.0.3
-    - gevent ==1.2.2
-    - psycopg2
+    - gevent ==1.3.5
     - requests >=2.18
     - tqdm >=4.19
     - editdistance
@@ -45,14 +44,15 @@ requirements:
     - scipy
     - pytz ==2017.3
     - unidecode
-    - numpydoc ==0.8.0
-    - conllu
-    - wget
-    - perl
-    - openjdk
     - pytest
     - flaky
     - responses >=0.7
+    - numpydoc ==0.8.0
+    - conllu ==0.11
+    - parsimonious ==0.8.0
+    - wget
+    - perl
+    - openjdk
 
 test:
   imports:
