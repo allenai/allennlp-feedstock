@@ -14,8 +14,8 @@ An open-source NLP research library, built on PyTorch.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/nelson-liu/allennlp-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/allennlp-feedstock)
-[![OSX](https://img.shields.io/travis/nelson-liu/allennlp-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/allennlp-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/allennlp-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/allennlp-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/allennlp-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/allennlp-feedstock)
 ![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
@@ -66,7 +66,7 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string).
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string)
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
